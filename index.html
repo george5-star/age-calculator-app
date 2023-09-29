@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="./src/assets/images/favicon-32x32.png" type="image/x-icon" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="./src/css/styles.css" />
+  <title>Frontend Mentor | Age calculator app</title>
+  <script src="./src/js/app.js" type="module"></script>
+</head>
+
+<body>
+  <main>
+    <div class="wrapper">
+      <form id="form" class="form">
+        <div class="form__group">
+          <label for="form-input-day" class="form__label">Day</label>
+          <input type="text" class="form__input-day" id="form-input-day" placeholder="DD" data-form-input-day
+            maxlength="2" />
+          <div class="form__error">This field is required</div>
+        </div>
+        <div class="form__group">
+          <label for="form-input-month" class="form__label ">Month</label>
+          <input type="text" id="form-input-month" class="form__input-month" placeholder="MM" data-form-input-month
+            maxlength="2" />
+          <div class="form__error">This field is required</div>
+        </div>
+        <div class="form__group">
+          <label for="form-input-year" class="form__label">Year</label>
+          <input type="text" class="form__input-year" id="form-input-year" placeholder="YYYY" data-form-input-year
+            maxlength="4" />
+          <div class="form__error">This field is required</div>
+        </div>
+        <button class="form__btn" type="submit">
+          <img src="./src/assets/images/icon-arrow.svg" alt="arrow icon" />
+        </button>
+      </form>
+      <div class="divider"></div>
+      <div class="display">
+        <div class="display__date">
+          <span class="date display--years" data-date-years>--</span>years
+        </div>
+        <div class="display__date">
+          <span class="date display--months" data-date-months>--</span>months
+        </div>
+        <div class="display__date">
+          <span class="date display--days" data-date-days>--</span>days
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+
+</html>
